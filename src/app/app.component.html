@@ -1,6 +1,26 @@
+<md-toolbar color="primary">
+  <span>MAIN MENU             user: {{loggedUser}}</span>
+
+  <md-toolbar-row style="height: 32px">
+    <span><button md-button (click)="goToLogin()">Login / Change user</button></span>
+    <span class="example-spacer"></span>
+    <md-icon class="example-icon">vpn_key</md-icon>
+    <md-icon class="example-icon">account_circle</md-icon>
+  </md-toolbar-row>
+
+  <md-toolbar-row style="height: 32px">
+    <span><button md-button (click)="goToContacts()">Add new contact</button></span>
+    <span class="example-spacer"></span>
+    <md-icon class="example-icon">person_add</md-icon>
+  </md-toolbar-row>
+
+  <md-toolbar-row style="height: 32px">
+    <span><button md-button (click)="goToContactsList()">Show all contacts</button></span>
+    <span class="example-spacer"></span>
+    <md-icon class="example-icon">contacts</md-icon>
+  </md-toolbar-row>
+
+</md-toolbar>
+
 <router-outlet>
-
 </router-outlet>
-
-
-
