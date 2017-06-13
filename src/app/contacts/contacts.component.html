@@ -1,0 +1,22 @@
+<router-outlet></router-outlet>
+
+<div class="newCard">
+
+  <header><md-icon>person_add</md-icon></header>
+
+  <input [(ngModel)]="entry.firstName" style="width: 80%; background-color: lightcyan" placeholder="first name" ngModel>
+  <br>
+  <input [(ngModel)]="entry.lastName" style="width: 80%; background-color: lightcyan" placeholder="last name" ngModel>
+  <br>
+  <input [(ngModel)]="entry.mobile" style="width: 80%; background-color: lightcyan" placeholder="phone" ngModel>
+  <br>
+  <input [(ngModel)]="entry.streetAddress" style="width: 80%; background-color: lightcyan" placeholder="street address" ngModel>
+  <br>
+  <input [(ngModel)]="entry.city1" style="width: 80%; background-color: lightcyan" placeholder="city" ngModel>
+  <br>
+
+  <button (click)="saveContact()" >
+    <md-icon style="color: darkviolet">save</md-icon>
+  </button>
+
+</div>
